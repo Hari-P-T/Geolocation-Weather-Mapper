@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Weather Map</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg"></script>
+    <script src="./index.js"></script>
+  </head>
+  <body onload="initMap()">
+    <div id="map" style="height: 500px; width: 100%;"></div>
+    <br />
+    <div>
+      Latitude: <input type="text" id="lat" disabled />
+      Longitude: <input type="text" id="lng" disabled />
+    </div>
+    <br />
+    <div id="weather-info">
+      <h3>Weather Info</h3>
+      <table>
+        <tr>
+          <td>Today's Temperature:</td>
+          <td id="today-temp"></td>
+        </tr>
+        <tr>
+          <td>Yesterday's Temperature:</td>
+          <td id="yesterday-temp"></td>
+        </tr>
+        <tr>
+          <td>Tomorrow's Temperature:</td>
+          <td id="tomorrow-temp"></td>
+        </tr>
+        <tr>
+          <td>Today's Humidity:</td>
+          <td id="today-humidity"></td>
+        </tr>
+        <tr>
+          <td>Yesterday's Humidity:</td>
+          <td id="yesterday-humidity"></td>
+        </tr>
+        <tr>
+          <td>Tomorrow's Humidity:</td>
+          <td id="tomorrow-humidity"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
